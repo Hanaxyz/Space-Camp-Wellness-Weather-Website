@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Camp Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+<body>
+
+    </head>
+ <header>
+        <span id="about" onclick="myWindow()">About</span>
+       <div class="logo">
+        <img src="assets/images/logosc.png">
+       </div> 
+        
+
+<span id="titleh">A Fan Website !</span>
+
+<div class="about-container"></div>
+
+       
+    </header>
+   
+
+
+<video id="bg-video" autoplay muted loop playsinline>
+  <source src="" type="video/mp4">
+</video>
+
+
+
+    <div class="main-container">
+<!--search-container-->
+        <div class="search-container">
+
+<input type="text" id="city-input" placeholder="Enter your city :">
+<button onclick="getWeather()">Search</button>
+
+
+        </div>
+
+<!-- end of search-container-->
+        <!--MAIN INFO  CONTAINER -->
+        <div class="mainInfo-container">
+            <div id="city" class="city">Boston</div>
+            <div id="temp" class="temp">15°</div>
+            <div id="statue" class="statue">Cloudy</div>
+
+
+            <div id="H-L-Temp" class="H-L-Temp">
+            <span id="highest-T">H:<span>21</span></span>
+            <span id="lowest-T">L:<span>12</span></span>
+            </div>
+
+           
+            
+        </div>
+        <!--END OF MAIN INFO  CONTAINER -->
+       
+
+<div class="today-and-advice-wrapper">
+
+        <!--Advice CONTAINER -->
+        <div class="advice-container">
+
+       <p> It's cloudy .
+        <b> Don't forget to use Space Camp </b> 
+        lip balms to feel like fluffy clouds .</p>
+
+        </div>
+
+          <!--End of Advice CONTAINER -->
+
+        <!--TODAY CONTAINER -->
+    <div class="today-container">
+        <!--1-->
+            <div class="hour-card">
+        <div class="time">8AM</div>
+        <img src="assets/images/birthdaycake.png" class="balm-img" alt="Lip Balm">
+        <div class="temp">10°</div>
+           </div>
+
+        <!--2-->
+        <div class="hour-card">
+            <div class="time">11AM</div>
+            <img src="assets/images/coconut.png" class="balm-img" alt="Lip Balm">
+            <div class="temp">12°</div>
+        </div>
+            <!--3-->
+
+            <div class="hour-card">
+            <div class="time">1PM</div>
+            <img src="assets/images/vanilla.png" class="balm-img" alt="Lip Balm">
+            <div class="temp">15°</div>
+        </div>
+        <!--4-->
+
+
+             <div class="hour-card">
+            <div class="time">7PM</div>
+            <img src="assets/images/pineapple.png" class="balm-img" alt="Lip Balm">
+            <div class="temp">16°</div>
+        </div>
+
+         <!--5-->
+               <div class="hour-card">
+            <div class="time">11PM</div>
+            <img src="assets/images/coconut.png" class="balm-img" alt="Lip Balm">
+            <div class="temp">17°</div>
+        </div>
+
+
+    </div>
+
+    <!--END OF TODAY CONTAINER -->
+
+    </div>
+
+
+  <!--WEEK CONTAINER -->
+
+        <div class="week-container">
+             
+        <div class="week-header">
+            
+    
+              
+        </div>
+       
+            
+         <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Today</span>
+        <img src="assets/images/berrystardust.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/cold.png" class="weather-icon" alt="Weather">
+        
+        </div>
+
+
+      
+         <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Thu</span>
+        <img src="assets/images/saltedcaramel.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/rainy.png" class="weather-icon" alt="Weather">
+        </div>
+   
+            
+
+         <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Fri</span>
+        <img src="assets/images/watermelon.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/sunny.png" class="weather-icon" alt="Weather">
+        </div>
+
+
+        <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Sat</span>
+        <img src="assets/images/pineapple.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/rainy.png" class="weather-icon" alt="Weather">
+        </div>
+
+
+        
+        <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Sun</span>
+        <img src="assets/images/vanilla.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/cloudy.png "class="weather-icon" alt="Weather">
+        </div>
+
+
+         <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Mon</span>
+        <img src="assets/images/coconut.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/cold.png"class="weather-icon" alt="Weather">
+        </div>
+
+
+         <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Tue</span>
+        <img src="assets/images/strawberryfrosting.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/snowy.png" class="weather-icon" alt="Weather">
+        </div>
+
+
+        
+         <div class="day-row" style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="day-name">Wed</span>
+        <img src="assets/images/berrystardust.png" class="balm-img" alt="Lip Balm">
+        <img src="assets/icons/sunny.png" class="weather-icon" alt="Weather">
+        </div>
+
+
+
+
+
+
+    </div>
+
+  <!-- END OF WEEK CONTAINER -->
+
+
+    </div>
+
+<div id="my-window">
+    <div class="content">
+        <span class="close" onclick="myWindow()">&times;</span>
+
+        <p class="about-text">Hi! It's Hana (●'◡'●). This website shows you the weather of the city you typed and suggests you lip balm flavors based on the weather + the part of the day.</p>
+        
+        <p class="about-text">
+            I try to learn coding + designing by making projects related to what I love, and Space Camp is one of them. Found this idea on 
+            <a href="https://jp.pinterest.com/pin/917749230393957673/" target="_blank" class="pin-link">Pinterest</a> 
+            and I liked it, so I made it. It's not the same, but it is made with love.
+        </p>
+        
+        <p class="about-text">I don't know if someone will love it, or even find it, but I hope it will make someone smile! ^.^</p>
+
+        <p class="about-text">
+            If you find any bugs, please DM me on 
+            <a href="https://jp.pinterest.com/Hana___2005/" target="_blank" class="pin-link">Pinterest</a> 
+            to fix it!
+        </p>
+
+        <p class="footer-note">
+            ★ This is a fan website ★<br>
+            ★ All rights reserved to Space Camp Wellness and Nick Sturniolo. ★
+        </p>
+    </div> </div>
+
+
+
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
