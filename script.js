@@ -274,17 +274,12 @@ videoElement.load();
       
 
              
-const selectedHours = ["09:00", "12:00", "15:00", "18:00", "21:00"];
-const today=new Date().toISOString().split('T')[0];
+ const selectedHours = ["09:00", "12:00", "15:00", "18:00", "21:00"];
 
-const filteredList=data.list.filter(t=>{
-
-const time = t.dt_txt.substring(11, 16);
-const date=t.dt_txt.split(' ')[0];
-
-return selectedHours.includes(time) && date===today;
-
-})
+ const filteredList = data.list.filter(t => {
+    const time = t.dt_txt.substring(11, 16);
+    return selectedHours.includes(time);
+}).slice(0, 5);
 
  let html='';
 
@@ -295,12 +290,15 @@ filteredList.forEach(t => {
          const myStatus=getStatus(apiStatus);
 
 
-    const time=t.dt_txt.substring(11,16);
-    const nowTime=getPartOfTheDay(data)
+       const time=t.dt_txt.substring(11,16);
+    const currentHour = parseInt(time.split(':')[0]);
+    let itemPartOfDay = 'Night';
+    if (currentHour >= 5 && currentHour < 12) itemPartOfDay = "Morning";
+    else if (currentHour >= 12 && currentHour < 17) itemPartOfDay = "Afternoon";
+    else if (currentHour >= 17 && currentHour < 20) itemPartOfDay = "Evening";
 
-    const temprature=Math.round(t.main.temp);
-    const myFlavor=chooseFlavor(myStatus,nowTime);
-
+const temprature = Math.round(t.main.temp);
+const myFlavor = chooseFlavor(myStatus, itemPartOfDay);
 
 
 
