@@ -419,39 +419,96 @@ cursor: pointer;
 }
 
 
-/*Phones Version :*/
+/*Phones Version :::::::::::::::::::::::::::::::::::::*/
 @media (max-width:768px){
 
-.week-header{
-    position:static;
-    top:auto;
-    margin:0;
-    padding:15px;
-    justify-content:center;
-    border-bottom:none;
-}
+    header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
 
-.week-container{
-    display:flex;
-    flex-direction:column;
-    align-items:stretch;
-    width:100%;
-    padding:15px;
-    gap:10px;
-}
+    .main-container{
+        padding:20px;
+    }
 
-.day-row{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 15px;
-    border-bottom:1px solid rgba(255,255,255,.2);
-}
+    .city{
+        font-size:50px;
+    }
 
-.weather-icon{
-    width:35px;
-    height:35px;
-}
+    .mainInfo-container .temp{
+        font-size:40px;
+    }
+
+    .today-and-advice-wrapper{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        gap:20px;
+    }
+
+    .advice-container{
+        width:100%;
+        padding:20px;
+    }
+
+    .today-container{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        gap:10px;
+        padding:20px;
+    }
+
+    .hour-card{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        padding:10px 0;
+        border-bottom:1px solid rgba(255,255,255,.2);
+    }
+
+    .balm-img{
+        width:60px;
+        height:60px;
+    }
+
+    .week-header{
+        position:static;
+        margin:0 0 15px 0;
+        padding:0;
+        justify-content:center;
+        border-bottom:none;
+    }
+
+    .week-container{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        padding:20px;
+    }
+
+    .day-row{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px 0;
+        border-bottom:1px solid rgba(255,255,255,.2);
+    }
+
+    .weather-icon{
+        width:35px;
+        height:35px;
+    }
+
+    #my-window{
+        width:90%;
+        padding:25px;
+    }
 
 }
