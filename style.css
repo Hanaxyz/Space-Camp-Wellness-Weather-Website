@@ -420,38 +420,38 @@ cursor: pointer;
 
 
 /*Phones Version :*/
-@media (max-width: 768px) {
-   
-    .week-container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        gap: 15px;
-        padding: 15px;
-        width: 100% !important;
-    }
+@media (max-width:768px){
 
+.week-header{
+    position:static;
+    top:auto;
+    margin:0;
+    padding:15px;
+    justify-content:center;
+    border-bottom:none;
+}
 
-    .week-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
-        padding-bottom: 10px;
-        margin-bottom: 5px;
-        margin-top: -530px; 
-   
-    }
+.week-container{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    width:100%;
+    padding:15px;
+    gap:10px;
+}
 
-  
-    .hour-card {
-        display: flex;
-        flex-direction: row; 
-        justify-content: space-between;
-        align-items: center;
-        width: 95%;
-        padding: 10px;
-    }
+.day-row{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 15px;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.weather-icon{
+    width:35px;
+    height:35px;
+}
+
 }
