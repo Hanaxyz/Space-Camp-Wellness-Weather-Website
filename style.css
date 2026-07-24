@@ -476,14 +476,16 @@ cursor: pointer;
         height:60px;
     }
 
-    .week-header{
-        position:static;
-        margin:0 0 15px 0;
-        padding:0;
-        justify-content:center;
-        border-bottom:none;
-    }
-
+ .week-header{
+    position: static;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
     .week-container{
         width:100%;
         display:flex;
