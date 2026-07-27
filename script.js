@@ -1,7 +1,7 @@
 weatherArray={
 Sunny:{
-Morning:["Mint frosting", "Watermelon"],
-Afternoon:["Pineapple", "Strawberry frosting"],
+Morning:["Mint frosting", "Watermelon","peach"],
+Afternoon:["Pineapple", "Strawberry frosting","peach"],
 Evening:["Vanilla", "Strawberry frosting"],
 Night:["Mint frosting","Watermelon","Pineapple"]
 
@@ -19,7 +19,7 @@ Night:["Vanilla", "Salted caramel"]
 
 Cloudy:{
 
-Morning:["Berry stardust", "Vanilla","Coconut",],
+Morning:["Berry stardust", "Vanilla","Coconut","peach"],
 Afternoon:["Coconut","Berry stardust"],
 Evening:["Coconut", "Vanilla"],
 Night:["Berry stardust", "Vanilla","Coconut"]
