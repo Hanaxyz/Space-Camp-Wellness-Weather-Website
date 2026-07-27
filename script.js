@@ -9,7 +9,7 @@ Night:["Mint frosting","Watermelon","Pineapple"]
 
 Rainy:{
 Morning:["Berry stardust", "Vanilla","Birthday cake"],
-Afternoon:["Salted caramel", "Wild cherry"],
+Afternoon:["Salted caramel", "Wild cherry","peach"],
 Evening:["Birthday cake", "Vanilla"],
 Night:["Vanilla", "Salted caramel"]
 
