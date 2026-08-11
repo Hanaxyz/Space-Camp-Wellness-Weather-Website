@@ -243,9 +243,15 @@ function updateUI(data) {
 const videoElement = document.getElementById("bg-video");
 const videoSource = videoElement.querySelector("source");
 
-videoSource.src=`assets/bg/${effect.video}`;
+videoSource.src = `assets/bg/${effect.video}`;
+
+videoElement.muted = true;
+videoElement.playsInline = true;
 videoElement.load();
 
+videoElement.play().catch(error => {
+    console.log("Autoplay blocked:", error);
+});
 
 
 
